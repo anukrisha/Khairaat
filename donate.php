@@ -70,7 +70,7 @@
           <li><a class="active" href="donate.php">Donate</a></li>
           <li><a href="request.php">Request</a></li>
           <li><a href="team.php">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="logout.php">Logout</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -297,7 +297,7 @@ else
           <li><a class="active" href="donate.php">Donate</a></li>
           <li><a href="request.php">Request</a></li>
           <li><a href="team.php">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="login.php">Login</a></li>
           <li><a href="signup.php">Signup</a></li>
         </ul>

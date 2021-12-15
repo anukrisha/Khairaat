@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Books</title>
+  <title>Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,7 +35,7 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">khairaat@example.com</a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Khairaat@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -61,11 +61,11 @@
         <ul>
           <li><a href="index2.php">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a class="active" href="books.php">Books</a></li>
+          <li><a href="books.php">Books</a></li>
           <li><a href="donate.php">Donate</a></li>
           <li><a href="request.php">Request</a></li>
           <li><a href="team.php">Team</a></li>
-          <li><a  href="contact.php">Contact</a></li>
+          <li><a class="active" href="contact.php">Contact</a></li>
           <?php
           session_start();
           if(isset($_SESSION["id"]) && isset($_SESSION["pwd"]))
@@ -77,13 +77,8 @@
               else
               {
         ?>
-        <li><a href="login.php">Login</a></li>
-        <li><a href="signup.php">Signup</a></li>
-        <?php
-              session_destroy();
-              }
-              
-        ?>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="signup.php">Signup</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -99,52 +94,55 @@
 
         <ol>
           <li><a href="index2.php">Home</a></li>
-          <li>Books</li>
+          <li>Contact</li>
         </ol>
-        <h2>Books</h2>
+        <h2>Contact</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-
-<div class="section-title">
-  <h2>SELECT THE TYPE OF BOOK YOU NEED</h2>
-</div>
-<section id="featured" class="featured">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="icon-box">
-          <i class="bi bi-card-checklist"></i>
-          <h3><a href="academic_books.php">ACADEMIC BOOKS</a></h3>
-          <p>Maths, Science, History, take your pick!</p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="icon-box">
-          <i class="bi bi-binoculars"></i>
-          <h3><a href="nonacademic_books.php">NON ACADEMIC BOOKS</a></h3>
-          <p>Classics, Thriller, Romance, whatever you need!</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6"> 
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Jaypee Institute
+                Of Information Technology 
+                Noida- 62, UP
+                India</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+
+        </div>
 
         <div class="row">
 
+          <div class="col-lg-12 ">
+            <iframe class="mb-4 mb-lg-0" src="https://maps.google.com/maps?width=384&amp;height=100%25&amp;hl=en&amp;q=jiit%2062%20noida+(Khairaat)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
           <div class="col-lg-6">
-            <form action=" " method="post" role="form" class="php-email-form">
-              
-            </form>
+            
           </div>
 
         </div>
@@ -157,51 +155,58 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="index2.php">Home</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="team.php">Team</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="books.php">Books</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="donate.php">Donate</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="request.php">Request</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-contact">
-                <h4>Contact Us</h4>
-                <p>
-                  Jaypee Institute <br>
-                  Of Information Technology <br>
-                  Noida- 62, UP<br>
-                  India <br><br>
-                  <strong>Phone:</strong> +91 7419170809<br>
-                  <strong>Email:</strong> khairaat@gmail.com<br>
-                </p>
-    
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-info">
-                <h3>About ख़ैरात</h3>
-                <p>An initiative that aims to make used books readily available to those who need it</p>
-                
-              </div>
-    
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index2.php">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="team.php">Team</a></li>
+              </ul>
             </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="books.php">Books</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="donate.php">Donate</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="request.php">Request</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                Jaypee Institute <br>
+                Of Information Technology <br>
+                Noida- 62, UP<br>
+                India <br><br>
+                <strong>Phone:</strong> +91 7419170809<br>
+                <strong>Email:</strong> Khairaat@gmail.com<br>
+              </p>
+  
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-info">
+              <h3>About ख़ैरात</h3>
+              <p>An initiative that aims to make used books readily available to those who need it</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+  
           </div>
         </div>
-      </footer><!-- End Footer -->
+      </div>
+    </footer><!-- End Footer -->
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -217,3 +222,5 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+</html>

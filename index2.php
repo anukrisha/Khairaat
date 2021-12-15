@@ -60,7 +60,7 @@
           <li><a href="donate.php">Donate</a></li>
           <li><a href="request.php">Request</a></li>
           <li><a href="team.php">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <?php
             session_start();
             if(isset($_SESSION["id"]) && isset($_SESSION["pwd"]))
