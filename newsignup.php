@@ -18,17 +18,42 @@ else
     $sql="USE khairaat";
     if ($conn->query($sql) === TRUE) 
     {
+     
         
-    $sql = "INSERT INTO user (email, password, name, mobileNo) VALUES ('$email', '$password', '$name', $mobile)";
+    $sql = "SELECT * FROM user WHERE email='".$_POST["email"]."'";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) 
+    {
+      while($row = mysqli_fetch_assoc($result)) 
+      {
+        session_start();
+        $_SESSION["id"] = $_POST["email"];
+        $_SESSION["pwd"] = $_POST["password"];
+        header("Location: signupuncuccesful.php");
+
+    
+      }
+    } 
+    else 
+    {
+         $sql = "INSERT INTO user (email, password, name, mobileNo) VALUES ('$email', '$password', '$name', $mobile)";
     if ($conn->query($sql) === TRUE) {
         
         session_start();
             $_SESSION["id"] = $_POST["email"];
             $_SESSION["pwd"] = $_POST["password"];
-            header("Location: tysignup.php");
+            header("Location: index2.php");
     } else {
         die ("Error: " . $sql . "<br>" . $conn->error);
     }
+
+    }
+        
+        ///
+   
+
+    ////
         
     } 
     else 

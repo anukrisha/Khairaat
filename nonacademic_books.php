@@ -62,14 +62,14 @@ table, th, td {
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1><a href="index.html">Khairaat</a></h1>
+        <h1><a href="index2.php">Khairaat</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index2.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a class="active" href="books.php">Books</a></li>
           <li><a href="donate.php">Donate</a></li>
@@ -108,7 +108,7 @@ table, th, td {
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.php">Home</a></li>
           <li><a href="books.php">Books</a></li>
           <li>Non Academic Books</li>
         </ol>
@@ -122,13 +122,8 @@ table, th, td {
 
    <h7> If you are interested in any of these books, <a href="request.php">click here</a> </h7>
 
-    <section id="contact" class="contact">
-
-        <div class="row">
-
-          <div class="col-lg-6">
+    <section id="contact" class="contact"  >
            
-
             <?php
 
 echo "<br>";
@@ -152,7 +147,7 @@ if ($conn->query($sql) === TRUE)
                 
                 $result=mysqli_query($conn, $b);
 
-                echo "<table border='5'>";
+                echo "<table border='10'>";
                 echo "<tr>";
                 echo "<th>BOOK NAME</th>";
                 echo "<th> AUTHOR </th>";
@@ -193,25 +188,6 @@ die( "Error: " . $sql . "<br>" . $conn->error);
 
 </center>
 
-
-
-            
-            
-            
-
-
-              
-
-
-
-            
-             ?>
-             
-          </div>
-
-        </div>
-
-      </div>
     </section> <!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -227,7 +203,7 @@ die( "Error: " . $sql . "<br>" . $conn->error);
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="index2.php">Home</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="team.php">Team</a></li>
                 </ul>
@@ -270,7 +246,19 @@ die( "Error: " . $sql . "<br>" . $conn->error);
             </div>
           </div>
         </div>
-      </footer><!-- End Footer -->
+       <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+</footer><!-- End Footer -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
